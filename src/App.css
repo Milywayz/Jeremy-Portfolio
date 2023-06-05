@@ -58,3 +58,9 @@ body {
 i{
   font-size: 3.5em;
 }
+
+.icons{
+  display: flex;
+  justify-content: space-around;
+align-items: flex-end;
+}

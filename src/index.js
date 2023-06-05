@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import M from "materialize-css";
+import { FaBeer } from "react-icons/fa";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

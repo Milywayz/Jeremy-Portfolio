@@ -5,7 +5,7 @@ import { TbBrandTwitter } from "react-icons/tb";
 
 function Footer() {
   return (
-    <footer className="page-footer icons cyan lighten-3">
+    <footer className="page-footer icons cyan lighten-3 footer">
       <div className="col l6 s12">
         <a href="https://github.com/Milywayz">
           <i className="icons">

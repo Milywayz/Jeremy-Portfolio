@@ -64,3 +64,10 @@ i{
   justify-content: space-around;
 align-items: flex-end;
 }
+
+.footer{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+}

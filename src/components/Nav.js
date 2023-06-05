@@ -7,8 +7,11 @@ function Nav({ currentPage, handlePageChange }) {
         <a
           href="#about"
           onClick={() => handlePageChange("About")}
-          className={currentPage === "About" ? "nav-link active" : "nav-link"}
-          // className="navHeader brand-logo center blue-text text-blue darken-2"
+          className={
+            currentPage === "About"
+              ? "nav-link active navHeader brand-logo center blue-text text-blue darken-2"
+              : "nav-link navHeader brand-logo center blue-text text-blue darken-2"
+          }
         >
           Jeremy's Portfolio
         </a>
@@ -18,9 +21,10 @@ function Nav({ currentPage, handlePageChange }) {
               href="#about"
               onClick={() => handlePageChange("About")}
               className={
-                currentPage === "About" ? "nav-link active" : "nav-link"
+                currentPage === "About"
+                  ? "nav-link active indigo-text text--blue darken-2 bold"
+                  : "nav-link blue-text text-blue lighten-1 bold"
               }
-              //  className="blue-text text--blue darken-2 bold"
             >
               About Me
             </a>
@@ -30,9 +34,10 @@ function Nav({ currentPage, handlePageChange }) {
               href="#portfolio"
               onClick={() => handlePageChange("Portfolio")}
               className={
-                currentPage === "Portfolio" ? "nav-link active" : "nav-link"
+                currentPage === "Portfolio"
+                  ? "nav-link active indigo-text text--blue darken-2 bold"
+                  : "nav-link blue-text text-blue lighten-1 bold"
               }
-              //  className="blue-text text--blue darken-2 bold"
             >
               Portfolio
             </a>
@@ -42,9 +47,10 @@ function Nav({ currentPage, handlePageChange }) {
               href="#contact"
               onClick={() => handlePageChange("Contact")}
               className={
-                currentPage === "Contact" ? "nav-link active" : "nav-link"
+                currentPage === "Contact"
+                  ? "nav-link active indigo-text text--blue darken-2 bold"
+                  : "nav-link blue-text text-blue lighten-1 bold"
               }
-              // className="blue-text text--blue darken-2 bold"
             >
               Contact
             </a>
@@ -54,9 +60,10 @@ function Nav({ currentPage, handlePageChange }) {
               href="#resume"
               onClick={() => handlePageChange("Resume")}
               className={
-                currentPage === "Resume" ? "nav-link active" : "nav-link"
+                currentPage === "Resume"
+                  ? "nav-link active indigo-text text--blue darken-2 bold"
+                  : "nav-link blue-text text-blue lighten-1 bold"
               }
-              // className="blue-text text--blue darken-2 bold"
             >
               Resume
             </a>

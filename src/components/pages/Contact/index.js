@@ -1,13 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
+import ContactCss from "./contact.module.css";
 
 export default function Contact() {
   return (
-    <div className="row">
-      <div className="col s3">
-        <h3 className="blue-text text-darken-2">Contact Me</h3>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <div className="row">
+        <div className="col">
+          <h4>Email:</h4>
+        </div>
+        <div className="col">
+          <form>
+            <input
+              name="email"
+              type="email"
+              placeholder="email"
+              style={{ width: "300px", height: "75px" }}
+            />
+          </form>
+        </div>
       </div>
-
-      <div className="col s9"></div>
     </div>
   );
 }

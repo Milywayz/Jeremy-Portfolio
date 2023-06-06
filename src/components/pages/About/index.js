@@ -1,5 +1,6 @@
 import React from "react";
 import AboutCss from "./about.module.css";
+import profilePic from "../../../Images/profileImage.png";
 
 export default function About() {
   return (
@@ -8,6 +9,7 @@ export default function About() {
         <div className="card blue-grey darken-1">
           <div className="card-content white-text">
             <span className="card-title">About Me</span>
+            <img src={profilePic} />
             <p>
               Hello there, my name is Jeremy Jenkins and I am a student at SMU
               Coding Bootcamp. My hobbies are ice skating, playing hockey, video

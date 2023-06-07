@@ -9,7 +9,7 @@ export default function About() {
         <div className="card blue-grey darken-1">
           <div className="card-content white-text">
             <h4 className="cyan-text">About Me</h4>
-            <img src={profilePic} />
+            <img src={profilePic} alt="profile pic" />
             <p>
               Hello there, my name is Jeremy Jenkins and I am a student at SMU
               Coding Bootcamp. My hobbies are ice skating, playing hockey, video

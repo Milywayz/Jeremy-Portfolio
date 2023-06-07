@@ -1,10 +1,17 @@
 import React from "react";
-import ResumeCss from "./resume.module.css";
 
 export default function Resume() {
   return (
-    <div style={{ textAlign: "center" }}>
-      <a></a>
+    <div style={{ textAlign: "center", marginTop: "20px" }}>
+      <h3 style={{ fontSize: 35 }}>Download My Resume</h3>
+      <a
+        href={process.env.PUBLIC_URL + "/Resume.pdf"}
+        download
+        className="waves-effect waves-light btn"
+        type="button"
+      >
+        Resume
+      </a>
       <h3 style={{ fontSize: 35 }}>Languages:</h3>
       <ul>
         <li>JavaScript</li>

@@ -8,6 +8,7 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [focused, setFocused] = useState(false);
 
   // Imputing the form
   const handleInputChange = (e) => {
@@ -23,6 +24,9 @@ export default function Contact() {
     } else {
       setMessage(inputValue);
     }
+  };
+  const handleBlur = () => {
+    setFocused(false);
   };
   // Submitting the form
   const handleFormSubmit = (e) => {
@@ -41,7 +45,7 @@ export default function Contact() {
       setErrorMessage("Message must have at least ten characters");
       return;
     }
-
+    setFocused(true);
     // Clears out forms
     setMessage("");
     setName("");
@@ -57,7 +61,7 @@ export default function Contact() {
         style={{ width: "75%", display: "flex" }}
       >
         <form className="form">
-          {errorMessage && (
+          {!focused && errorMessage && (
             <div>
               <p
                 className="error-text red-text"
@@ -72,6 +76,7 @@ export default function Contact() {
             <input
               value={name}
               name="name"
+              onBlur={handleBlur}
               onChange={handleInputChange}
               type="text"
               id="name"
@@ -84,6 +89,7 @@ export default function Contact() {
             <input
               value={email}
               name="email"
+              onBlur={handleBlur}
               onChange={handleInputChange}
               type="email"
               id="email"
@@ -96,6 +102,7 @@ export default function Contact() {
             <input
               value={message}
               name="message"
+              onBlur={handleBlur}
               onChange={handleInputChange}
               type="text"
               id="message"
@@ -107,9 +114,9 @@ export default function Contact() {
             className="white-text"
             style={{ textAlign: "center", fontSize: "25px" }}
           >
-            Feel free to reach out to me down below with any questions you may
-            have and I will make sure to respond back to you by email between
-            2-3 business days
+            Feel free to reach out to me with any questions you may have and I
+            will make sure to respond back to you by email between 2-3 business
+            days
           </p>
           <a
             href="#a"

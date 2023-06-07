@@ -4,6 +4,7 @@ import ResumeCss from "./resume.module.css";
 export default function Resume() {
   return (
     <div style={{ textAlign: "center" }}>
+      <a></a>
       <h3 style={{ fontSize: 35 }}>Languages:</h3>
       <ul>
         <li>JavaScript</li>

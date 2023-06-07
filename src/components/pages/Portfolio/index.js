@@ -8,12 +8,12 @@ export default function Portfolio() {
       <p style={{ textAlign: "center" }}>
         (Click on the images to see the deployed application)
       </p>
-      <div className="row" style={{ textAlign: "center" }}>
+      <div className={PortfolioCss.grid}>
         {data.map(({ name, image, content, link, github }) => (
-          <div className="col s12 m6">
+          <div key={name} style={{ width: "100%" }}>
             <div
               className="card teal lighten-2"
-              style={{ marginBottom: "100px" }}
+              style={{ marginBottom: "100px", marginTop: "50px" }}
             >
               <div className="card-image">
                 <a href={link}>

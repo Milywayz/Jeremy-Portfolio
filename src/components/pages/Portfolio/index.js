@@ -1,29 +1,37 @@
 import React from "react";
 import PortfolioCss from "./portfolio.module.css";
-import StarWars from "../../../Images/starWars.png";
+import data from "./port.json";
 
 export default function Portfolio() {
   return (
-    <div className={PortfolioCss.grid}>
-      <div className="row">
-        <div>
-          <div className="card">
-            <div className="card-image">
-              <img src={StarWars} />
-              <span className="card-title">Star Wars Generator</span>
-            </div>
-            <div className="card-content">
-              <p>
-                I am a very simple card. I am good at containing small bits of
-                information. I am convenient because I require little markup to
-                use effectively.
-              </p>
-            </div>
-            <div className="card-action">
-              <a href="#">This is a link</a>
+    <div>
+      <p style={{ textAlign: "center" }}>
+        (Click on the images to see the deployed application)
+      </p>
+      <div className="row" style={{ textAlign: "center" }}>
+        {data.map(({ name, image, content, link, github }) => (
+          <div className="col s12 m6">
+            <div
+              className="card teal lighten-2"
+              style={{ marginBottom: "100px" }}
+            >
+              <div className="card-image">
+                <a href={link}>
+                  <img src={process.env.PUBLIC_URL + image} alt={name} />
+                </a>
+                <h4>{name}</h4>
+              </div>
+              <div className="card-content">
+                <p>{content}</p>
+              </div>
+              <div className="card-action">
+                <a href={github} className="blue-text text-darken-2">
+                  Github Repo Link
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );

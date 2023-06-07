@@ -8,7 +8,7 @@ export default function About() {
       <div className="col s12 m6">
         <div className="card blue-grey darken-1">
           <div className="card-content white-text">
-            <span className="card-title">About Me</span>
+            <h4 className="cyan-text">About Me</h4>
             <img src={profilePic} />
             <p>
               Hello there, my name is Jeremy Jenkins and I am a student at SMU

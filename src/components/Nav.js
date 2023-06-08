@@ -76,7 +76,7 @@ function Nav({ currentPage, handlePageChange }) {
             </a>
           </li>
         </ul>
-        <a href="#" data-target="mobile-demo" className="sidenav-trigger">
+        <a href="#about" data-target="mobile-demo" className="sidenav-trigger">
           <i className="material-icons">menu</i>
         </a>
       </div>

@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PortfolioCss from "./portfolio.module.css";
 import data from "./port.json";
+import M from "materialize-css";
 
 export default function Portfolio() {
+  useEffect(() => {
+    const initializeMaterialbox = () => {
+      const elems = document.querySelectorAll(".materialboxed");
+      const options = {}; // Add any desired options here
+
+      M.Materialbox.init(elems, options);
+    };
+
+    initializeMaterialbox();
+  }, []);
   return (
     <div>
       <p style={{ textAlign: "center" }}>
@@ -16,16 +27,33 @@ export default function Portfolio() {
               style={{ marginBottom: "100px", marginTop: "50px" }}
             >
               <div className="card-image">
-                <a href={link}>
-                  <img src={process.env.PUBLIC_URL + image} alt={name} />
+                <a>
+                  <img
+                    className="materialboxed"
+                    width="650"
+                    src={process.env.PUBLIC_URL + image}
+                    alt={name}
+                  />
                 </a>
                 <h4>{name}</h4>
               </div>
               <div className="card-content">
                 <p>{content}</p>
               </div>
-              <div className="card-action">
-                <a href={github} className="blue-text text-darken-2">
+              <div
+                className="card-action"
+                style={{ display: "flex", justifyContent: "space-between" }}
+              >
+                <a
+                  href={link}
+                  className="cyan lighten-4 waves-effect waves-light btn blue-text text-darken-4"
+                >
+                  Application
+                </a>
+                <a
+                  href={github}
+                  className="cyan lighten-4 waves-effect waves-light btn blue-text text-darken-4"
+                >
                   Github Repo Link
                 </a>
               </div>

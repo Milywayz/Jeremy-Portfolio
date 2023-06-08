@@ -7,7 +7,7 @@ export default function Resume() {
       <a
         href={process.env.PUBLIC_URL + "/Resume.pdf"}
         download
-        className="waves-effect waves-light btn"
+        className="waves-effect waves-light btn pulse"
         type="button"
       >
         Resume

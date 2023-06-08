@@ -2,12 +2,13 @@ import React, { useEffect } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
 
 function Nav({ currentPage, handlePageChange }) {
+  // Nav useEffect for the Hamburger
   useEffect(() => {
-    // Initialize Materialize mobile menu
     const elems = document.querySelectorAll(".sidenav");
     M.Sidenav.init(elems);
   }, []);
 
+  // Nav HTML
   return (
     <nav>
       <div className="nav-wrapper cyan lighten-4">
@@ -80,6 +81,7 @@ function Nav({ currentPage, handlePageChange }) {
           <i className="material-icons">menu</i>
         </a>
       </div>
+      {/* Mobile HTML */}
       <ul className="sidenav" id="mobile-demo">
         <li>
           <a

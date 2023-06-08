@@ -4,16 +4,19 @@ import data from "./port.json";
 import M from "materialize-css";
 
 export default function Portfolio() {
+  // useEffect for images viewing
   useEffect(() => {
     const initializeMaterialbox = () => {
       const elems = document.querySelectorAll(".materialboxed");
-      const options = {}; // Add any desired options here
+      const options = {};
 
       M.Materialbox.init(elems, options);
     };
 
     initializeMaterialbox();
   }, []);
+
+  // Portfolio HTML/ Created Cards and imported data from port.json
   return (
     <div>
       <p style={{ textAlign: "center" }}>

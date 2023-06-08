@@ -3,6 +3,7 @@ import { DiGithubBadge } from "react-icons/di";
 import { TbBrandLinkedin } from "react-icons/tb";
 import { TbBrandTwitter } from "react-icons/tb";
 
+// Footer HTML
 function Footer() {
   return (
     <footer className="page-footer icons cyan lighten-3 footer">

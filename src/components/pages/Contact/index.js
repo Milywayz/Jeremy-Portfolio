@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ContactCss from "./contact.module.css";
 import { validateEmail } from "../utils/helpers";
 
+// Contact Me Page
 export default function Contact() {
   // UseStates
   const [name, setName] = useState("");
@@ -52,7 +53,7 @@ export default function Contact() {
     setEmail("");
     setErrorMessage("");
   };
-
+  // Contact Me HTML
   return (
     <section class="card-panel blue-grey darken-1">
       <h4 className="cyan-text">Contact Me</h4>

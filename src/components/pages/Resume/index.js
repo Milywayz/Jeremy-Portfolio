@@ -1,5 +1,6 @@
 import React from "react";
 
+// Resume HTML
 export default function Resume() {
   return (
     <div style={{ textAlign: "center", marginTop: "20px" }}>

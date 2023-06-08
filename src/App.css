@@ -1,3 +1,4 @@
+/* React CSS */
 .App {
   text-align: center;
 }
@@ -37,11 +38,7 @@
   }
 }
 
-nav {
-  height: 100px;
-  line-height: 100px;
-}
-
+/* General CSS */
 .bold {
   font-weight: 200px;
   font-size: 1.5em;
@@ -50,11 +47,16 @@ nav {
 body {
   font-family: Georgia, serif;
 }
+/* Nav CSS */
+nav {
+  height: 100px;
+  line-height: 100px;
+}
 
 .navHeader{
   font-size: 3em !important;
 }
-
+/* Icons CSS */
 i{
   font-size: 3.5em;
 }
@@ -64,7 +66,7 @@ i{
   justify-content: space-around;
 align-items: flex-end;
 }
-
+/* Footer CSS */
 .footer{
   position:fixed;
   bottom:0;

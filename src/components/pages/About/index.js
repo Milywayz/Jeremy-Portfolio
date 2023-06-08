@@ -2,6 +2,7 @@ import React from "react";
 import AboutCss from "./about.module.css";
 import profilePic from "../../../Images/profileImage.png";
 
+// About Page
 export default function About() {
   return (
     <div className={AboutCss.font}>

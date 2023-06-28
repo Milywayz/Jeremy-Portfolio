@@ -6,9 +6,9 @@ export default function Resume() {
     <div style={{ textAlign: "center", marginTop: "20px" }}>
       <h3 style={{ fontSize: 35 }}>Download My Resume</h3>
       <a
-        href={process.env.PUBLIC_URL + "/Resume.pdf"}
+        href={process.env.PUBLIC_URL + "/Jeremy-Resume.pdf"}
         download
-        className="waves-effect waves-light btn pulse"
+        className="waves-light btn pulse"
         type="button"
       >
         Resume
